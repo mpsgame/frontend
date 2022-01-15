@@ -1,9 +1,7 @@
-import './Dashboard.css'
+import React from "react";
 
-export default function Dashboard(props) {
-    return(
-        <div id = "dashboard">
-            Add dashboar components
-        </div>
-    );
-}
+const Dashboard = () => {
+  return <div>lol</div>;
+};
+
+export default Dashboard;
