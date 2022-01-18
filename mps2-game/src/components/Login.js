@@ -56,6 +56,8 @@ const Login = () => {
         const errorMessage = error.message;
         console.log(errorMessage);
       });
+
+    navigate("/dashboard");
   };
 
   return (
