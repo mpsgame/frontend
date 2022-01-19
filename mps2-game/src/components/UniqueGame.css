@@ -1,0 +1,21 @@
+#socreboard {
+    position: absolute;
+    padding-left: 80%;
+}
+
+#gameWindow {
+    position: absolute;
+    padding-left: 20%;
+    text-align: center;
+}
+
+#gameWindow img {
+    width: 340px;
+    height: 340px;
+}
+
+#socreboard li {
+    position: relative;
+    list-style-type: none;
+    font-size: 25px;
+}
