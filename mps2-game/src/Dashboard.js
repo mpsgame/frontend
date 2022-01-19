@@ -12,11 +12,11 @@ const Dashboard = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("a");
+    console.log(number);
 
     const re = /^[0-9\b]+$/;
 
-    if (e.target.value === "" || re.test(e.target.value)) {
+    if (number === "" || !re.test(number)) {
       console.log("say that you need to enter a number only");
     } else {
       navigate(`/game/${number}`);
