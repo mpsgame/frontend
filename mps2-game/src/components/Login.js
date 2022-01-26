@@ -15,7 +15,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+const Login = (props) => {
   function Copyright(props) {
     return (
       <Typography
@@ -43,6 +43,8 @@ const Login = () => {
 
     let email = data.get("email");
     let password = data.get("password");
+
+    props.setUser(email.split('@')[0]);
 
     const auth = getAuth();
     signInWithEmailAndPassword(auth, email, password)

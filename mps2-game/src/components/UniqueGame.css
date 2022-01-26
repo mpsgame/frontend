@@ -4,17 +4,20 @@
 }
 
 #gameWindow {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     position: absolute;
     padding-left: 20%;
     text-align: center;
 }
 
 #gameWindow img {
-    width: 340px;
-    height: 340px;
+    width: 200px;
+    height: 200px;
 }
 
-#socreboard li {
+li {
     position: relative;
     list-style-type: none;
     font-size: 25px;
